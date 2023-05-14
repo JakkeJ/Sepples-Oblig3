@@ -9,7 +9,7 @@ using namespace std;
 
 /// @brief Rectangle, inherits from BaseShape2D, uses two sides to determine area.
 /// @brief Takes two inputs in the constructor, width and height.
-class Rectangle: public BaseShape2D {
+class Rectangle: virtual BaseShape2D {
     public:
         Rectangle(double widthInput, double heightInput) {
             width = widthInput;
@@ -64,7 +64,7 @@ class Square: public Rectangle {
 };
 
 /// @brief Triangle, inherits from BaseShape2D, uses three sides A, B and C.
-class Triangle: public BaseShape2D {
+class Triangle: virtual BaseShape2D {
     public:
 
         /// @brief Returns the sides of the triangle.
@@ -128,8 +128,8 @@ class Triangle: public BaseShape2D {
         }
 };
 
-/// @brief Circle,. inherits from BaseShape2D, uses radius.
-class Circle: BaseShape2D {
+/// @brief Circle, inherits from BaseShape2D, uses radius.
+class Circle: virtual BaseShape2D {
     public:
 
         /// @brief Sets the radius of the circle.

@@ -47,6 +47,10 @@ int main(){
          << triangle.getSides()[0] << ", "
          << triangle.getSides()[1] << ", "
          << triangle.getSides()[2] << endl;
+    cout << "\u001b[33mTriangle angles: "
+         << fixed << setprecision(2) << triangle.getAngles(false)[0] << "rad, "
+         << fixed << setprecision(2) << triangle.getAngles(false)[1] << "rad, "
+         << fixed << setprecision(2) << triangle.getAngles(false)[2] << "rad\u001b[0m" << endl;
     cout << "Triangle angles: "
          << fixed << setprecision(2) << triangle.getAngles(true)[0] << "deg, "
          << fixed << setprecision(2) << triangle.getAngles(true)[1] << "deg, "
@@ -71,10 +75,6 @@ int main(){
          << triangle.getSides()[0] << ", "
          << triangle.getSides()[1] << ", "
          << triangle.getSides()[2] << endl;
-    cout << "\u001b[33mTriangle angles: "
-         << fixed << setprecision(2) << triangle.getAngles(false)[0] << "rad, "
-         << fixed << setprecision(2) << triangle.getAngles(false)[1] << "rad, "
-         << fixed << setprecision(2) << triangle.getAngles(false)[2] << "rad\u001b[0m" << endl;
     cout << "Triangle angles: "
          << fixed << setprecision(2) << triangle.getAngles(true)[0] << "deg, "
          << fixed << setprecision(2) << triangle.getAngles(true)[1] << "deg, "
